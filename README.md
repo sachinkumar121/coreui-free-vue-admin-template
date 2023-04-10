@@ -27,6 +27,7 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 * [Installation](#installation)
 * [Basic usage](#basic-usage)
 * [What's included](#whats-included)
+* [Vite Support](#vite-support)
 * [Documentation](#documentation)
 * [Versioning](#versioning)
 * [Creators](#creators)
@@ -120,6 +121,25 @@ coreui-free-vue-admin-template
 │
 └── package.json
 ```
+
+## Vite Support
+To use vite we can follow these steps. 
+- update package.json script section as follow
+```bash
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview"
+```
+
+- remove all types of vue cli from package.json.
+- add three dev dependencies
+```bash
+    "@vitejs/plugin-legacy": "^4.0.2",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "vite": "^4.2.1"
+```
+
 
 ## Documentation
 
